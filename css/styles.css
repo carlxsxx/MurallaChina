@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/*CLASES CONTADOR ATRAS*/
+
+#cuenta {
+    display: flex;
+    justify-content: center;
+    padding: 3% 3%;
+}
+
+.simply-section {
+    background-color: beige;
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.simply-amount {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.simply-word {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Estilos de la barra de navegación */
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 20%;
+    overflow: hidden;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.8s;
+}
+
+li {
+    float: left;
+    width: 14.2%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not {
+    /* Tengo puesto :not para que no se ejecute, si quiero que funcione quitar el :not (pero queda feo) */
+    color: white;
+    background-color: beige;
+}
+
+
+/* header !!!!!!!*/
+
+.header {
+    background-image: url('../img/maraton-muralla-china.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 100px;
+    color: beige;
+}
+
+
+/* CLASES DE COLUMNAS*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 3% 13%;
+}
+
+.one-column h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+
+.two-column img {
+    width: 80%;
+}
+
+.two-column h1 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.two-column h2 {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 5%;
+}
+
+.two-column h4 {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 0%;
+}
+
+#section-2 {
+    background-color: whitesmoke;
+}
+
+#section-3 {
+    background-color: white;
+}
+
+#section-3 h3 {
+    color: red;
+    text-align: center;
+    font-size: 26px;
+}
+
+#section-4 {
+    background-color: whitesmoke;
+}
+
+#section-4 h2 {
+    text-align: left;
+    padding: 1%;
+}
+
+#section-5 {
+    background-color: white;
+}
+
+#section-6 {
+    background-color: whitesmoke;
+}
+
+#footer {
+    background-color: white;
+    color: black;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/* CLASES DE COLUMNAS*/
+
+.padding-0 {
+    padding: 0px;
+}
+
+.padding-30 {
+    padding-top: 30px;
+}
+
+.padding-top-bottom {
+    padding: 12% 0;
+}
+
+@media screen and (max-width:700px) {
+    .two-column h1 {
+        font-size: 8vw;
+    }
+    .two-column p {
+        font-size: 4.2vw;
+    }
+    .two-column {
+        width: 100%;
+    }
+    .one-column h1 {
+        font-size: 8vw;
+    }
+    .four-column {
+        width: 50%;
+    }
+    li {
+        width: 50%;
+        float: none;
+        display: inline-block;
+    }
+    li a {
+        font-size: 20px;
+        display: inline-block;
+    }
+    ul {
+        padding: 0px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .header h1 {
+        font-size: 300%;
+    }
+}
